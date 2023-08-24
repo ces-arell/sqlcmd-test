@@ -3,13 +3,13 @@ on: [workflow_dispatch]
 
 jobs:
   test-output:
-    runs-on: ["ubuntu"]
+    runs-on: ["windows"]
     steps:
       - name: test output
         run: echo "SQL Test Record Insert"
 
   connect-remote:
-    runs-on: ["ubuntu"]
+    runs-on: ["windows"]
     steps:
       - uses: actions/checkout@v3
       - name: Install a SQL Server suite of tools
